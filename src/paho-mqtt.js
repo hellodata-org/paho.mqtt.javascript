@@ -88,12 +88,13 @@ function onMessageArrived(message) {
 		define(factory);
 	} else if (typeof exports === 'object'){
 		exports = factory();
-	} else {
-		if (typeof root.Paho === 'undefined'){
-			root.Paho = {};
-		}
-		root.Paho.MQTT = factory();
 	}
+
+	if (typeof this.Paho === 'undefined'){
+		this.Paho = {};
+	}
+	this.Paho.MQTT = factory();
+
 })(this, function LibraryFactory(){
 
 this.self = this;
