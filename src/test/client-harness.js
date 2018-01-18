@@ -1,5 +1,3 @@
-global.self = global;
-
 var WebSocketClient = require('websocket').client;
 var Paho = require('../paho-mqtt')
 

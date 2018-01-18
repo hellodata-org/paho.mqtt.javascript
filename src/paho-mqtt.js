@@ -96,7 +96,7 @@ function onMessageArrived(message) {
 	}
 })(this, function LibraryFactory(){
 
-
+this.self = this;
 var PahoMQTT = (function (global) {
 
 	// Private variables below, these are only visible inside the function closure
