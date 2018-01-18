@@ -94,6 +94,7 @@
 								</concat>
 								<delete file="target/paho-mqtt-min-2.js"/>
 								<delete file="target/paho-mqtt.min.js"/>
+                                                                <copy file="deps.cljs" toFile="target/deps.cljs"/>
 							</tasks>
 						</configuration>
 						<goals>
